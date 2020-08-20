@@ -3,3 +3,14 @@
 .my_highlight {
   background-color: aqua;
 }
+
+.my_highlight:hover {
+  background-color: green;
+}
+
+.my_highlight:active {
+  background-color: orange;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

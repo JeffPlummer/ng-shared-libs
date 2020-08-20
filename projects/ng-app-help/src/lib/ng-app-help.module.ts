@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
-import { NgAppHelpComponent } from './ng-app-help.component';
 import { NgAppHelpEnabledDirective } from './ng-app-help-enabled.directive';
+import { NgAppHelpEnablerButtonDirective } from './ng-app-help-enabler-button.directive';
 
 
 
 @NgModule({
-  declarations: [NgAppHelpComponent, NgAppHelpEnabledDirective],
+  declarations: [NgAppHelpEnabledDirective, NgAppHelpEnablerButtonDirective],
   imports: [
 
   ],
-  exports: [NgAppHelpComponent]
+  exports: [NgAppHelpEnablerButtonDirective, NgAppHelpEnabledDirective]
 })
 export class NgAppHelpModule { }

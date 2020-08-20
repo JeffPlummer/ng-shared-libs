@@ -1,4 +1,4 @@
-import {ElementRef, Injectable} from '@angular/core';
+import {Injectable} from '@angular/core';
 import {BehaviorSubject, Observable} from "rxjs";
 
 @Injectable({
@@ -9,7 +9,7 @@ export class NgAppHelpService {
   private appHelpEnabledSubject: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
   public appHelpEnabled$: Observable<boolean> = this.appHelpEnabledSubject.asObservable();
 
-  constructor(el: ElementRef) {
+  constructor() {
 
   }
 

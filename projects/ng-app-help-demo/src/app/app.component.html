@@ -1,5 +1,10 @@
-<button (click)="enable()">Enable Button</button>
+<button ngAppHelpEnablerButton>Enable Button</button>
 
-<button libNgAppHelpEnabled [highlightClass]="'my_highlight'">Test Button</button>
+<button ngAppHelpEnabled [highlightClass]="'my_highlight'"
+        [helpTemplate]="testTemplate"
+        (click)="test()">Test Button</button>
 
-<router-outlet></router-outlet>
+
+<ng-template #testTemplate>
+  <div>This is a test: {{testVar}}</div>
+</ng-template>
