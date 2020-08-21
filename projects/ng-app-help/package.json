@@ -6,7 +6,8 @@
     "@angular/core": "^8.2.14",
     "@angular/material": "^8.2.3"
   },
-  "dependencies": {
-
+  "dependencies": {},
+  "devDependencies": {
+    "sinon": "^9.0.3"
   }
 }
