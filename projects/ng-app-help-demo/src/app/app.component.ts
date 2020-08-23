@@ -16,7 +16,7 @@ export class AppComponent {
 
   }
 
-  public test() {
+  public doSomething() {
     console.log("Button was clicked");
   }
 }

@@ -1,15 +1,24 @@
 <button ngAppHelpEnablerButton [helpTemplate]='firstTime'>Enable Button</button>
-
-<button ngAppHelpEnabled [highlightClass]="'my_highlight'"
-        [helpTemplate]="testTemplate"
-        (click)="test()">Test Button</button>
-
 <ng-template #firstTime>
-  <div>First Time</div>
+  <div>This is some first time help.  Normally I'd put instructions here on how the help system works.</div>
 </ng-template>
 
-<ng-template #testTemplate>
-  <div>This is a test: {{testVar}}</div>
+
+<button ngAppHelpEnabled
+        [highlightClass]="'my_highlight'"
+        [helpTemplate]="myElementHelpTemplate"
+        (click)="doSomething()">Test Button</button>
+<ng-template #myElementHelpTemplate>
+  <div>This is a template that would show help on how to use this element</div>
+</ng-template>
+
+<div ngAppHelpEnabled
+     [highlightClass]="'my_highlight'"
+     [helpTemplate]="myOtherHelpTemplate">
+  Here's some text that for some reason requires detailed help.
+</div>
+<ng-template #myOtherHelpTemplate>
+  <div>It's text.  Just read it.  Help complete.</div>
 </ng-template>
 
 
