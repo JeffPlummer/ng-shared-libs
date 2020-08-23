@@ -1,6 +1,6 @@
 {
   "name": "@plummer-libs/ng-app-help",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/JeffPlummer/ng-shared-libs",
   "peerDependencies": {
     "@angular/common": "^8.2.14",

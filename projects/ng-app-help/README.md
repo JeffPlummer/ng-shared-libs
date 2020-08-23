@@ -90,7 +90,7 @@ Attach this directive to any HTML element you want to attach help.
 ```
 
 
-###Service: NgAppHelpService
+### Service: NgAppHelpService
 Used to communicate between the directives.  But can be used directly to get the current state, or trigger help enable.
 
 #### Api
@@ -111,7 +111,7 @@ Used to communicate between the directives.  But can be used directly to get the
 </table> 
 
 
-###Example:
+### Example:
 ```html
 <button ngAppHelpEnablerButton [helpTemplate]='firstTime'>Enable Button</button>
 <ng-template #firstTime>
