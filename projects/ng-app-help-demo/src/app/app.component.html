@@ -1,10 +1,15 @@
-<button ngAppHelpEnablerButton>Enable Button</button>
+<button ngAppHelpEnablerButton [helpTemplate]='firstTime'>Enable Button</button>
 
 <button ngAppHelpEnabled [highlightClass]="'my_highlight'"
         [helpTemplate]="testTemplate"
         (click)="test()">Test Button</button>
 
+<ng-template #firstTime>
+  <div>First Time</div>
+</ng-template>
 
 <ng-template #testTemplate>
   <div>This is a test: {{testVar}}</div>
 </ng-template>
+
+

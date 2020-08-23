@@ -42,7 +42,7 @@ export class NgAppHelpEnabledDirective implements OnInit, OnDestroy{
       this.timer = setInterval( () => {
         const dialogRef = this.dialog.open(this.helpTemplate);
         clearInterval(this.timer);
-      }, 1500)
+      }, 500)
     }
   }
 

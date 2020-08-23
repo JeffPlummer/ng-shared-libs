@@ -121,7 +121,7 @@ describe('NgAppHelpEnabledDirective', () => {
   });
 
 
-  it('should not open dialog if enabled and hover less than 1.5 seconds', async() => {
+  it('should not open dialog if enabled and hover less than 0.5 seconds', async() => {
     const svc: NgAppHelpService = TestBed.get(NgAppHelpService);
     const dlgSvc: MatDialog = TestBed.get(MatDialog);
     const dlgSpy = spyOn(dlgSvc, 'open').and.returnValue(null);
@@ -142,7 +142,7 @@ describe('NgAppHelpEnabledDirective', () => {
     expect(enabledButtonDe.classes['my_highlight']).toEqual(true);
 
     enabledButtonDe.triggerEventHandler('mouseover', null);
-    await sleep(500);
+    await sleep(100);
 
     fixture.detectChanges();
     await fixture.whenStable();
@@ -155,7 +155,7 @@ describe('NgAppHelpEnabledDirective', () => {
   });
 
 
-  it('should not open dialog if not enabled and hover has been for more than 1.5 seconds', async() => {
+  it('should not open dialog if not enabled and hover has been for more than 0.5 seconds', async() => {
     const svc: NgAppHelpService = TestBed.get(NgAppHelpService);
     const dlgSvc: MatDialog = TestBed.get(MatDialog);
     const dlgSpy = spyOn(dlgSvc, 'open').and.returnValue(null);
