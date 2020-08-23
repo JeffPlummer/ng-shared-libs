@@ -5,7 +5,10 @@ The are my shared angular libraries.  As build more, and extract more from my ot
 
 ## Projects
 ### ng-app-help
-Very simple, but very cool way to add detailed help to your application.
+NgAppHelp is simple angular 2+ library the provides a great way to provide your users in-app help.  The user experience is to provide help button that when pressed, highlights all elements that have attached help.  The user can then hover over those 'help enabled' elements and see detailed help as a modal.
+
+![Demo Image](https://github.com/JeffPlummer/ng-shared-libs/blob/master/projects/ng-app-help/assets/help_demo.gif)
+
 
 
 ## Build
